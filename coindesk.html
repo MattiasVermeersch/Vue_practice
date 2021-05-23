@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="css/site.css">
+    <title>Coindesk API with Vue</title>
+</head>
+<body>
+    <div id="coindesk">
+        <h1>Bitcoin Price Index</h1>
+        <div v-for="currency in info" class="currency">
+            {{currency.description}} - 
+            <span class="lighten">
+                <span v-html="currency.symbol"></span> {{currency.rate_float}}
+            </span>
+        </div>
+    </div>
+
+
+
+    <script src="js/coindesk.js"></script>
+</body>
+</html>
