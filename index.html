@@ -14,7 +14,19 @@
         <h1>{{pageTitle}}</h1>
 
         <!-- Binding elements -->
-        <h2 v-bind:title="hoverText">Hover over me!</h2>
+        <h2>Binding elements</h2>
+        <p v-bind:title="hoverText">Hover over me!</p>
+
+        <!-- Conditionals -->
+        <div>
+            <h2>Conditionals</h2>
+            <div v-if="canYouSeeMe">
+                <p>Now you can see me!</p>
+            </div>
+            <div v-else>
+                <p>I will show if <b>canYouSeeMe</b> is false</p>
+            </div>
+        </div>
     </div>
     <!-- script with Vue data must be at the end of the body -->
     <script src="js/app.js"></script>

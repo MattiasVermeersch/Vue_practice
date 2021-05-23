@@ -3,5 +3,6 @@ var app = new Vue({
     data: {
         pageTitle: "Hello Vue from Aartrijke",
         hoverText: "Page loaded on " + new Date().toLocaleDateString(),
+        canYouSeeMe: true,
     },
 })
