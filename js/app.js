@@ -11,10 +11,18 @@ var app = new Vue({
         ],
         twoWayBindingMessage: "This is my message",
         counter: 0,
+        showNewPersonForm: false,
+        newPerson: [{name: "", city: ""}],
     },
     methods: {
         toggleCanYouSeeMe: function () {
             this.canYouSeeMe = !this.canYouSeeMe;
         },
+        showPersonForm: function(showForm) {
+            this.showNewPersonForm = showForm;
+        },
+        addNewPerson: function(person) {
+            this.people.push(person)
+        }
     },
 });

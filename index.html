@@ -43,6 +43,23 @@
                     {{person.name}} lives in {{person.city}}
                 </li>
             </ol>
+
+            <!-- events handler on forms -->
+            <button v-on:click="showPersonForm(true)">Show person form</button>
+            <form v-if="showNewPersonForm" v-on:submit.prevent="addNewPerson(newPerson)">
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" v-model="newPerson.name">
+                </div>
+                <div>
+                    <label for="city">City</label>
+                    <input type="text" id="city" v-model="newPerson.city">
+                </div>
+                <div>
+                    <input type="submit" value="Add new person">
+                    <button v-on:click="showPersonForm(false)">Cancel</button>
+                </div>
+            </form>
         </div>
 
         <!-- Two way binding -->
