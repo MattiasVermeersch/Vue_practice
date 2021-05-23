@@ -7,7 +7,7 @@ body {
     line-height: 1.4; 
 } 
 
-#coindesk { 
+#coindesk, #app { 
     margin-top: 20px; 
     width: 300px; 
     padding: 0 40px 40px; 
