@@ -48,6 +48,12 @@
             <input v-model="twoWayBindingMessage">
         </div>
 
+        <!-- Events -->
+        <div>
+            <h2>Listening to events</h2>
+            <button v-on:click="counter += 1">Add 1</button>
+            <p>You've clicked the button {{counter}} times</p>
+        </div>
 
     </div>
     <!-- script with Vue data must be at the end of the body -->

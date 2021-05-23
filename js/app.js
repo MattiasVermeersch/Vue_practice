@@ -10,5 +10,6 @@ var app = new Vue({
             {name: "Els", city: "Roeselare"},
         ],
         twoWayBindingMessage: "This is my message",
+        counter: 0,
     },
 })
