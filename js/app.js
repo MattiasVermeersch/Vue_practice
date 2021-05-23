@@ -9,5 +9,6 @@ var app = new Vue({
             {name: "William", city: "Brugge"},
             {name: "Els", city: "Roeselare"},
         ],
+        twoWayBindingMessage: "This is my message",
     },
 })

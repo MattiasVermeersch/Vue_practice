@@ -18,7 +18,8 @@
         <p v-bind:title="hoverText">Hover over me!</p>
 
         <!-- Conditionals -->
-        <div>
+        <!-- CSS atrributes -->
+        <div v-bind:class="{active: canYouSeeMe}">
             <h2>Conditionals</h2>
             <div v-if="canYouSeeMe">
                 <p>Now you can see me!</p>
@@ -39,6 +40,14 @@
                 </li>
             </ol>
         </div>
+
+        <!-- Two way binding -->
+        <div>
+            <h2>Two way binding</h2>
+            <p>{{twoWayBindingMessage}}</p>
+            <input v-model="twoWayBindingMessage">
+        </div>
+
 
     </div>
     <!-- script with Vue data must be at the end of the body -->
