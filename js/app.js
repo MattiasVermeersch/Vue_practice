@@ -12,4 +12,9 @@ var app = new Vue({
         twoWayBindingMessage: "This is my message",
         counter: 0,
     },
-})
+    methods: {
+        toggleCanYouSeeMe: function () {
+            this.canYouSeeMe = !this.canYouSeeMe;
+        },
+    },
+});
